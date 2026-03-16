@@ -444,22 +444,24 @@ const PortfolioView = () => {
         <span style={{ fontWeight: 600, color: '#ffffff' }}>Proof of Learning Portfolio</span> project proudly built and published with informed consent during a <span style={{ fontWeight: 500, color: '#ffffff' }}>Move Smart Contracts Code Camp</span> by DEVCON Philippines & Sui Foundation — where the participant wrote, tested, and deployed a Move smart contract on Sui Mainnet. The object's immutability serves one purpose: the participant's authorship and timestamp cannot be altered, removed, or claimed by anyone else.
       </p>
       
-      {/* Project Deployment Links - Left aligned */}
+{/* Project Deployment Links - Left aligned */}
       <div style={{
-        display: "flex",
+        display: "none",
         gap: "1.5rem",
-        justifyContent: "flex-start",  // Left align buttons
+        justifyContent: "flex-start",
         alignItems: "center",
         flexWrap: "wrap",
         marginTop: "1.2rem"
       }}>
         {/* Object Link - DYNAMIC */}
+   {/* Object Link - DYNAMIC */}
         {objectId ? (
           <a 
             href={`${NETWORKS[currentNetwork].explorer}/object/${objectId}/fields`} 
             target="_blank" 
             rel="noopener noreferrer"
             style={{
+              display: 'none',  // HIDDEN
               color: '#6C8EEF',
               textDecoration: 'none',
               display: 'inline-flex',
